@@ -1,6 +1,9 @@
 /*common*/
 body{
-    background-color: rgb(57, 57, 57);
+    background-image: url(imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200%;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
@@ -57,17 +60,19 @@ span{
 
 
 /*inicio*/
-.headerFlex{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+#inicioBodyFlex{
     background-color: rgb(57, 57, 57);
-    border-style: solid;
+    padding-top: 20px;
+    border-style: solid;        
     border-color: white;
     border-width: 2px;
     border-top: 0px;
     margin: 20px;
+}
+.headerFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row
 }
 .headImg{
     display: flex;
@@ -86,7 +91,6 @@ span{
 footer{
     background-color: rgb(79, 79, 79);
     padding: 15px;
-    padding-bottom: 5%;
     clear: both;
     text-align: right;
     margin-top: 10%;
@@ -110,6 +114,7 @@ margin: 8px;
 }
 .texto{
     text-align: center;
+    margin-bottom: 75px;
 }
 
 

@@ -1,6 +1,9 @@
 /*common*/
 body{
-    background-color: rgb(57, 57, 57);
+    background-image: url(imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200%;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
@@ -57,12 +60,15 @@ span{
 
 
 /*inicio*/
-.headerFlex{
-    display: flex;
+.headerGrid{
+    display: grid;
+    grid-template-areas: 
+    'nav1 nav1'
+    'nav2 nav3'
+    'nav4 nav5';
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: rgb(57, 57, 57);
+    padding-top: 20px;
     border-style: solid;
     border-color: white;
     border-width: 2px;
@@ -70,14 +76,15 @@ span{
     margin: 20px;
 }
 .headImg{
-    display: flex;
-    justify-content: center;
     margin: auto;
-    margin-top: 10px;
+    margin-bottom: 20px;
     width: 100px;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: white;
+}
+#inicioHeader{
+    display: grid;
 }
 #inicioMain{
     margin: 60px;
@@ -93,7 +100,7 @@ footer{
 }
 .link{
 margin: 8px;
-    width: 300px;
+    width: 250px;
     background-color: white;
     padding: 15px 20px;
     text-align: center;
@@ -110,6 +117,7 @@ margin: 8px;
 }
 .texto{
     text-align: center;
+    margin-bottom: 75px;
 }
 
 
@@ -121,22 +129,32 @@ margin: 8px;
     height: 350px;
     margin-bottom: 30px;
     margin-top: 30px;
-    margin-left: 60px;
-    margin-right: 60px;
     border-radius: 5px;
     background-color: white;
     color: black;
     text-align: center;
     padding: 15px;
 }
+#producto1{
+    grid-area: p1;
+}
+#producto2{
+    grid-area: p2;
+}
+#producto3{
+    grid-area: p3;
+}
 #textoClicable{
     text-decoration: none;
     color: black;
 }
 #productosMain{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'p1 p2'
+    'p3 p3';
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 120px;
 }
 .button{
     text-decoration: none;
@@ -170,34 +188,55 @@ margin: 8px;
     width: 3.5%;
     margin-right: 15px;
 }
-#contacto1{
-width: 350px;
-height: 300px;
-}
+#contacto1{grid-area: c1;
+    width: 375px;
+    height: 375px;}
+#contacto2{grid-area: c2;}
+#contacto3{grid-area: c3;}
+#contacto4{grid-area: c4;}
+#contacto5{grid-area: c5;}
+#contacto6{grid-area: c6;}
+#contacto7{grid-area: c7;}
 
 #contactosMain{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'c1 c2'
+    'c1 c3'
+    'c1 c4'
+    'c1 c5'
+    'c1 c6'
+    'c1 c7';
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
 }
 
 
 
 
 /*paginaDeProductos*/
-#gameflex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+#gameGrid{
+    display: grid;
+    grid-template-areas: 
+    'g2 g1'
+    'g3 g1'
+    'g4 g4';
+    justify-content: center;
 }
+#game1{grid-area: g1;}
+#game2{grid-area: g2;}
+#game3{grid-area: g3;}
+#game4{grid-area: g4;}
+
 .productBody{
     background-color: rgb(204, 204, 204);
     padding: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+    clear: right;
 }
 .carrito{
-    padding-top: 50px;
+    margin-top: 170px;
+    margin-bottom: 30px;
+    width: 150px;
     color: white;
     background-color: rgb(57,57,57);
     padding: 10px;
@@ -208,6 +247,9 @@ height: 300px;
     text-align: center;
 }
 .carrito:hover{
+    margin-top: 170px;
+    margin-bottom: 30px;
+    width: 150px;
     color: rgb(57,57,57);
     background-color: white;
     padding: 10px;
@@ -220,9 +262,4 @@ height: 300px;
 .productBody p{
     text-align: left;
     color: black;
-}
-#productImg{
-    width: 350px;
-    margin-bottom: 15px;
-    margin-left: 50%;
 }
