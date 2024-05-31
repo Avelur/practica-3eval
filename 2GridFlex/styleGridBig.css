@@ -1,0 +1,112 @@
+
+body{
+    background-color: rgb(128, 128, 128);
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    text-align: right;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 1fr 60px 60px 60px;
+    height: 60px;
+    background-color: rgb(11, 11, 11);
+    margin-bottom: 15px;
+}
+
+.main-grid-container{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+}
+
+#main-item{
+    background-color: rgb(39, 39, 39);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#text-block{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    text-align: justify;
+    vertical-align: baseline;
+}
+
+.list{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    text-align: justify;
+    vertical-align: baseline;
+}
+
+#text-block a{
+    color: white;
+}
+
+#text-block img{
+    border-radius: 25%;
+    height: 25%;
+    margin-right: 5px;
+}
+
+.user-display{
+    display: inline;
+}
+
+.main1{
+    height: 500px;
+}
+
+#grid-item, #grid-icon{
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.grid1:hover{
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
+    background-color: rgb(222, 222, 222);
+    color: rgb(39, 39, 39);
+}
+
+.grid1{
+    background-color: rgb(39, 39, 39);
+    color: #ffffff;
+}
+
+.grid2{
+    background-color: rgb(222, 222, 222);
+    color: rgb(39, 39, 39);
+}
+
+#grid-icon{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+header{
+    color: red;
+}
+
+.main2{
+    grid-column: 1/4;
+    height: 100px;
+}
+
+.head{
+    grid-column: 1/9;
+    height: 20px;
+    font-size: 15px;
+}

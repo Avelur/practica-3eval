@@ -1,0 +1,270 @@
+/*common*/
+body{
+    background-color: rgb(57, 57, 57);
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+#saludos{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 40px;
+}
+p{
+    color: white;
+}
+input{
+    margin: 10px;
+}
+form{
+    margin: auto;
+    width: 50%;
+}
+#tableText{
+    text-align: right;
+    color: white;
+}
+iframe{
+    margin: 25px;
+    margin-left: 150px;
+    border-radius: 15px;
+    outline: 5px;
+    outline-style: solid;
+    outline-color: rgb(13, 13, 31);
+}
+#productImg{
+    margin-right: 50px;
+    float: right;
+}
+h2{
+    color: white;
+}
+h3{
+    margin-bottom: 15px;
+}
+h5{
+    margin-bottom: 30px;
+}
+span{
+    color: white;
+    padding-right: 15px;
+}
+
+
+
+/*inicio*/
+.headerGrid{
+    display: grid;
+    grid-template-areas: 
+    'nav1'
+    'nav2'
+    'nav3'
+    'nav4'
+    'nav5';
+    justify-content: center;
+    background-color: rgb(57, 57, 57);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-top: 0px;
+    margin: 20px;
+}
+.headImg{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+#inicioHeader{
+    display: grid;
+}
+#inicioMain{
+    margin: 60px;
+    margin-top: 60px;
+}
+footer{
+    background-color: rgb(79, 79, 79);
+    padding: 15px;
+    padding-bottom: 5%;
+    clear: both;
+    text-align: right;
+    margin-top: 10%;
+}
+.link{
+margin: 8px;
+    width: 300px;
+    background-color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.link:hover{
+    margin: 5.5px;
+    padding: 15px 20px;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+}
+.texto{
+    text-align: center;
+}
+
+
+
+
+/*productos*/
+.producto{
+    width: 230px;
+    height: 350px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+#producto1{
+    grid-area: p1;
+}
+#producto2{
+    grid-area: p2;
+}
+#producto3{
+    grid-area: p3;
+}
+#textoClicable{
+    text-decoration: none;
+    color: black;
+}
+#productosMain{
+    display: grid;
+    grid-template-areas: 
+    'p1'
+    'p2'
+    'p3';
+    justify-content: center;
+    gap: 120px;
+}
+.button{
+    text-decoration: none;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: rgb(57, 57, 57);
+    border-radius: 5px;
+}
+#starbound{
+    margin-top: 50px;
+    margin-bottom: 85px;
+}
+
+
+
+
+/*contactos*/
+.icon{
+    color: white;
+    padding-right: 15px;
+}
+#icon{
+    width: 3.5%;
+    margin-right: 15px;
+}
+#contacto1{grid-area: c1;
+width: 300px;
+height: 300px;}
+#contacto2{grid-area: c2;}
+#contacto3{grid-area: c3;}
+#contacto4{grid-area: c4;}
+#contacto5{grid-area: c5;}
+#contacto6{grid-area: c6;}
+#contacto7{grid-area: c7;}
+
+#contactosMain{
+    display: grid;
+    grid-template-areas: 
+    'c1'
+    'c2'
+    'c3'
+    'c4'
+    'c5'
+    'c6'
+    'c7';
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+
+/*paginaDeProductos*/
+#gameGrid{
+    display: grid;
+    grid-template-areas: 
+    'g1'
+    'g2'
+    'g3'
+    'g4';
+    justify-content: center;
+}
+#game1{grid-area: g1;}
+#game2{grid-area: g2;}
+#game3{grid-area: g3;}
+#game4{grid-area: g4;}
+
+.productBody{
+    background-color: rgb(204, 204, 204);
+    padding: 25px;
+    padding-bottom: 10px;
+    clear: right;
+}
+.carrito{
+    margin-top: 170px;
+    margin-bottom: 30px;
+    width: 150px;
+    color: white;
+    background-color: rgb(57,57,57);
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    outline-style: solid;
+    outline-color: rgb(57,57,57);
+    text-align: center;
+}
+.carrito:hover{
+    margin-top: 170px;
+    margin-bottom: 30px;
+    width: 150px;
+    color: rgb(57,57,57);
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(57,57,57);
+    outline-style: solid;
+    outline-color: white;
+    text-align: center;
+}
+.productBody p{
+    text-align: left;
+    color: black;
+}
+
+#productImg{
+    width: 350px;
+}
