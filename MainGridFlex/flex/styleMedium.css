@@ -72,7 +72,8 @@ span{
 .headerFlex{
     display: flex;
     justify-content: center;
-    flex-direction: row
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .headImg{
     display: flex;
@@ -94,6 +95,7 @@ footer{
     clear: both;
     text-align: right;
     margin-top: 10%;
+    padding-bottom: 55px;
 }
 .link{
 margin: 8px;
